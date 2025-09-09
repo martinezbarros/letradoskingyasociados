@@ -30,7 +30,7 @@ const AdvancedContactForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contacto', {
+      const response = await fetch('@/api/contacto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
