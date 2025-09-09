@@ -1,0 +1,171 @@
+/* app/globals.css */
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap');
+
+@layer base {
+  :root {
+    /* Colores base - Tema Corporativo Abogados (default) */
+    --color-primary-50: #f5f7fa;
+    --color-primary-100: #e4e9f2;
+    --color-primary-500: #1e3a5f;   /* Azul Marino */
+    --color-primary-600: #162d4a;
+    --color-primary-700: #10253d;
+    --color-primary-900: #0b1a2b;
+    
+    --color-secondary-500: #bfa26a; /* Dorado elegante */
+    --color-secondary-600: #a88c50;
+    
+    --color-accent-500: #5c677d;   /* Gris azulado sobrio */
+    --color-accent-600: #4a5468;
+    
+    --color-success: #198754;      /* Verde sobrio */
+    --color-warning: #d6a106;      /* Amarillo-dorado elegante */
+    --color-error: #b02a37;        /* Rojo oscuro serio */
+    
+    --color-text-primary: #1c1c1c;  /* Negro-gris */
+    --color-text-secondary: #4b5563;
+    --color-text-muted: #6b7280;
+    
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8f9fb;
+    --color-bg-muted: #f1f3f6;
+    
+    --color-border: #d1d5db;
+  }
+
+  .theme-green {
+    --color-primary-50: #f0fdf4;
+    --color-primary-100: #dcfce7;
+    --color-primary-500: #166534; /* Verde corporativo */
+    --color-primary-600: #14532d;
+    --color-primary-700: #064e3b;
+    --color-primary-900: #022c22;
+    
+    --color-secondary-500: #bfa26a;
+    --color-secondary-600: #a88c50;
+  }
+
+  .theme-purple {
+    --color-primary-50: #f5f3ff;
+    --color-primary-100: #ede9fe;
+    --color-primary-500: #4c1d95; /* Púrpura corporativo sobrio */
+    --color-primary-600: #3b0764;
+    --color-primary-700: #2e1065;
+    --color-primary-900: #1e0e3e;
+    
+    --color-secondary-500: #bfa26a;
+    --color-secondary-600: #a88c50;
+  }
+
+  .theme-rose {
+    --color-primary-50: #fff1f2;
+    --color-primary-100: #ffe4e6;
+    --color-primary-500: #9f1239; /* Rojo vino sobrio */
+    --color-primary-600: #881337;
+    --color-primary-700: #701a32;
+    --color-primary-900: #4c0519;
+    
+    --color-secondary-500: #bfa26a;
+    --color-secondary-600: #a88c50;
+  }
+html {
+  font-family: 'Inter', sans-serif;
+}
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* h1 específico */
+h1 {
+  font-size: 2.5rem; /* ~40px */
+  margin-bottom: 1rem;
+}
+
+/* h2 específico */
+h2 {
+  font-size: 2rem; /* ~32px */
+  margin-bottom: 0.75rem;
+}
+
+/* Párrafos */
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem; /* ~18px */
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+  /* Aplicar colores a utilidades de Tailwind */
+  .bg-primary-50{
+    background-color: var(--color-primary-50);
+  }
+  .bg-primary-100{
+    background-color: var(--color-primary-100);
+  }
+  .bg-primary-500 {
+    background-color: var(--color-primary-500);
+  }
+  
+  .bg-primary-600 {
+    background-color: var(--color-primary-600);
+  }
+  .bg-accent-500{
+    background-color: var(--color-accent-500);
+  }
+  
+  .text-primary-50 {
+    color: var(--color-primary-50);
+  }
+  .text-primary-active {
+    color: var(--color-warning);
+  }
+  .text-primary-hover {
+    color: var(--color-text-primary);
+  }
+  .text-primary-500 {
+    color: var(--color-primary-500);
+  }
+
+  
+  .text-primary-600 {
+    color: var(--color-primary-600);
+  }
+  .text-secondary-600{
+    color: var(--color-secondary-600);
+  }
+  
+  .border-primary-500 {
+    border-color: var(--color-primary-500);
+  }
+  
+  .bg-secondary-500 {
+    background-color: var(--color-secondary-500);
+  }
+  
+  /* ... más utilidades según sea necesario */
+}
+
+/* Estilos para el contenido de WordPress */
+.prose {
+  color: var(--color-text-primary);
+}
+
+.prose h2, .prose h3 {
+  color: var(--color-text-primary);
+}
+
+.prose a {
+  color: var(--color-primary-600);
+}
+
+.prose a:hover {
+  color: var(--color-primary-700);
+}
