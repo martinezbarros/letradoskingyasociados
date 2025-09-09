@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import HeroSection from '../ui/components/HeroSection';
 
 import * as motion from "motion/react-client";
-import AdvancedContactForm from '../ui/components/AdvancedContactForm';
 
 const Contacto: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -87,7 +86,7 @@ const Contacto: React.FC = () => {
               <div className="lg:w-1/2">
                 <div className="bg-white rounded-xl shadow-md p-8 mb-8">
                   <h2 className="text-2xl font-semibold mb-6 text-[#010101]">Envíanos un mensaje</h2>
-                  {/* <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -168,7 +167,7 @@ const Contacto: React.FC = () => {
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#010101] focus:border-[#010101] outline-none transition-colors"
                       ></textarea>
 
-                      
+                      {/* Deshabilitar reCaptcha */}
                       <input type="hidden" name="_captcha" value="false"></input>
                     </div>
 
@@ -182,8 +181,7 @@ const Contacto: React.FC = () => {
                       </button>
                     </div>
 
-                  </form> */}
-                  <AdvancedContactForm />
+                  </form>
                 </div>
                 <div className="bg-white rounded-xl shadow-md p-8 hidden md:block">
                   <h2 className="text-2xl font-semibold mb-6 text-[#010101]">Síguenos en redes sociales</h2>

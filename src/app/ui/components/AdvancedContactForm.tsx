@@ -30,7 +30,7 @@ const AdvancedContactForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('@/api/contacto', {
+      const response = await fetch('/api/contacto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,14 +53,12 @@ const AdvancedContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Campos ocultos */}
         <input type="hidden" name="_template" value="custom" />
         <input type="hidden" name="_templateURL" value="https://abogadosparaisosfiscales.com/formsubmit-template.html" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web" />
         <input type="hidden" name="_autoresponse" value="Gracias por contactarnos. Hemos recibido tu mensaje." />
         <input type="hidden" name="_next" value="https://abogadosparaisosfiscales.com/gracias" />
-
       {/* Campos del formulario (igual que el ejemplo anterior) */}
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -107,6 +105,7 @@ const AdvancedContactForm: React.FC = () => {
           <option value="">Selecciona un asunto</option>
           <option value="Consulta general">Consulta general</option>
           <option value="Solicitud de presupuesto">Solicitud de presupuesto</option>
+          <option value="Soporte técnico">Soporte técnico</option>
           <option value="Otro">Otro</option>
         </select>
       </div>
