@@ -243,7 +243,7 @@ const Contacto: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Dirección</h3>
-                        <p className="text-gray-600">PH  Plaza 2000, frente a Plaza New York</p>
+                        <p className="text-gray-600">Rali Business Center, Av. Vasco Nuñez de Balboa, Panamá</p>
                       </div>
                     </div>
 
@@ -267,7 +267,7 @@ const Contacto: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Email</h3>
-                        <p className="text-gray-600">bufete.letradosyarquitectos@gmail.com</p>
+                        <p className="text-gray-600">abogadosparaisosfiscales@gmail.com</p>
                       </div>
                     </div>
 
