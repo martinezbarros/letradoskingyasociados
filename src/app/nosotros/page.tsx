@@ -1,4 +1,4 @@
-// app/nosotros/page.tsx
+// app/nosotros/page.tsx - Letrados King
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,8 +9,8 @@ import HeroSection from '../ui/components/HeroSection';
 import AnimatedButton from '../ui/motion/AnimatedButton';
 
 export const metadata: Metadata = {
-  title: 'Nuestra Esencia - Experiencia, Discreción y Soluciones a Medida',
-  description: 'Firma especializada en soluciones jurídicas y fiduciarias de alta gama para clientes internacionales. Protección patrimonial, planificación sucesoria y asesoría legal especializada.',
+  title: 'Letrados King & Asociados - Innovación Legal para Negocios Modernos',
+  description: 'Firma legal joven y dinámica especializada en derecho digital, startups y emprendimiento. Combinamos expertise jurídico con comprensión del ecosistema tecnológico actual.',
 };
 
 export default function Nosotros() {
@@ -18,31 +18,28 @@ export default function Nosotros() {
     <>
       <motion.div>
         <HeroSection pageTitle="Nosotros" />
-        {/* Mission Section */}
+        
+        {/* Innovación Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <div className="lg:w-1/2">
                 <div className="relative h-96 w-full rounded-xl overflow-hidden">
                   <Image
-                    src="https://bakerandalvarez.site/abogadosasociadosmartinezbarros/wp-content/uploads/sites/3/2025/09/nosotros-scaled.jpg"
-                    alt="Nuestra Misión"
+                    src="https://bakerandalvarez.site/letradoskingyasociados/wp-content/uploads/sites/5/2025/09/our-team-king-scaled.jpg"
+                    alt="Innovación legal en Letrados King"
                     fill
                     className="object-cover"
                   />
                 </div>
               </div>
               <div className="lg:w-1/2">
-                <h2 className="text-3xl font-bold text-[#010101] mb-6">Nuestra Misión</h2>
+                <h2 className="text-3xl font-bold text-[#16224F] mb-6">Derecho para la Nueva Economía</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Somos una firma especializada que proporciona soluciones jurídicas y fiduciarias 
-                  de alta gama para clientes internacionales. Nuestra razón de ser es diseñar e 
-                  implementar estructuras patrimoniales robustas, eficientes y discretas, adaptadas 
-                  a las necesidades específicas de cada persona, familia o negocio.
+                 Letrados King & Asociados es una firma moderna que reinventa los servicios legales especializados en derecho comercial, servicios fiduciarios y asesoría de inversiones para la nueva economía. Nuestro enfoque innovador se aplica particularmente en la creación de empresas offshore en Panamá y otras jurisdicciones, así como en el desarrollo de fundaciones de interés privado adaptadas a emprendedores digitales, startups y negocios tecnológicos. Combinamos expertise jurídico con un profundo entendimiento de los modelos de negocio disruptivos y el ecosistema emprendedor actual.
                 </p>
                 <p className="text-lg text-gray-700">
-                  Nos dedicamos a proteger sus activos, preservar su legado y facilitar su crecimiento 
-                  en un entorno global seguro.
+                  Diseñamos fideicomisos para protección de patrimonio con un enfoque contemporáneo que incorpora las últimas tendencias regulatorias y tecnológicas. 
                 </p>
               </div>
             </div>
@@ -50,107 +47,99 @@ export default function Nosotros() {
         </section>
 
         {/* Values Section */}
-        <section className="py-16 bg-[#010101]">
+        <section className="py-16 bg-[#16224F]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-white mb-4">Nuestros Valores Fundamentales</h2>
+              <h2 className="text-3xl font-bold text-white mb-4">Nuestra Filosofía de Trabajo</h2>
               <p className="text-xl text-white max-w-3xl mx-auto">
-                Los pilares que sustentan nuestro compromiso con la excelencia y la confidencialidad
+                Principios que nos diferencian en el abordaje de los desafíos legales modernos
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Confidencialidad */}
+              {/* Innovación */}
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-10 h-10 text-[#BE9A42] " fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-[#BE9A42] ">Confidencialidad y Discreción</h3>
+                <h3 className="text-xl font-semibold mb-4 text-[#fbbf24]">Innovación Constante</h3>
                 <p className="text-white">
-                  Entendemos la sensibilidad de su información. Operamos con los más altos estándares 
-                  de privacidad y secreto profesional.
+                  Abrazamos el cambio y desarrollamos soluciones legales creativas para problemas modernos.
                 </p>
               </div>
 
-              {/* Excelencia */}
+              {/* Agilidad */}
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-10 h-10 text-[#BE9A42] " fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-[#BE9A42] ">Excelencia Técnica</h3>
+                <h3 className="text-xl font-semibold mb-4 text-[#fbbf24]">Agilidad Procesal</h3>
                 <p className="text-white">
-                  Nuestro equipo posee un conocimiento profundo y actualizado de las legislaciones 
-                  locales e internacionales, asegurando soluciones legalmente sólidas.
+                  Optimizamos procesos con tecnología para ofrecer respuestas rápidas sin sacrificar calidad.
                 </p>
               </div>
 
-              {/* Personalizado */}
+              {/* Transparencia */}
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-10 h-10 text-[#BE9A42] " fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-[#BE9A42] ">Enfoque Personalizado</h3>
+                <h3 className="text-xl font-semibold mb-4 text-[#fbbf24]">Transparencia Radical</h3>
                 <p className="text-white">
-                  Rechazamos las soluciones genéricas. Escuchamos sus objetivos únicos para construir 
-                  una estrategia hecha a su medida.
+                  Operamos con total claridad en costos, procesos y expectativas. Sin sorpresas, sin lenguaje oscuro.
                 </p>
               </div>
 
-              {/* Seriedad */}
+              {/* Enfoque */}
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-10 h-10 text-[#BE9A42] " fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-[#BE9A42] ">Seriedad y Compromiso</h3>
-                <p className="text-white ">
-                  Forjamos relaciones a largo plazo basadas en la integridad, la transparencia y el 
-                  compromiso inquebrantable con sus intereses.
-                </p>
+                <h3 className="text-xl font-semibold mb-4 text-[#fbbf24]">Enfoque Preventivo</h3>
+                <p className="text-white">Nuestra práctica se rige por los más altos estándares de excelencia jurídica, rigor analítico y ética profesional. </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-[#E6E8EC]">
+        <section className="py-24 bg-[#f5f3ff]">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 text-[#010101] ">Su Socio Estratégico</h2>
-            <p className="text-lg mb-8 max-w-3xl mx-auto text-[#010101] ">
-              Más que un proveedor de servicios, nos posicionamos como sus consejeros de confianza. 
-              Le acompañamos en el diseño de su estrategia patrimonial global, proporcionando la 
-              seguridad jurídica y la paz mental que necesita.
+            <h2 className="text-3xl font-bold mb-6 text-[#16224F]">Asesoría Legal para el Futuro</h2>
+            <p className="text-lg mb-8 max-w-3xl mx-auto text-[#16224F]">
+              No solo resolvemos problemas legales; ayudamos a construir negocios escalables, 
+              protegidos y preparados para los desafíos regulatorios del mañana.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <AnimatedButton>
                 <Link 
                   href="/contacto"
-                  className=" bg-[#010101] text-white px-8 py-3 rounded-md font-medium"
+                  className="bg-[#16224F] text-white px-8 py-3 rounded-md font-medium"
                 >
-                  Contáctenos
+                  Consultoría Inicial Sin Costo
                 </Link>
-
               </AnimatedButton>
               <AnimatedButton>
                 <Link 
                   href="/servicios"
-                  className="border border-[#010101] text-[#010101] px-8 py-3 rounded-md font-medium"
+                  className="border border-[#16224F] text-[#16224F] px-8 py-3 rounded-md font-medium"
                 >
-                  Nuestros Servicios
+                  Descubrir Servicios
                 </Link>
               </AnimatedButton>
             </div>
           </div>
         </section>
       </motion.div>
-
     </>
-  );
+  )
 }

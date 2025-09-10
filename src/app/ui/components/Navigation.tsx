@@ -170,7 +170,7 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#010101] border-t border-b border-border  md:absolute w-full md:left-0 md:top-0 shadow-sm shadow-white">
+    <nav className="bg-[#16224F] border-t border-b border-border  md:absolute w-full md:left-0 md:top-0 shadow-sm shadow-white">
       <div className="container mx-auto px-4">
         {/* Desktop Menu */}
         <div className="hidden md:flex">

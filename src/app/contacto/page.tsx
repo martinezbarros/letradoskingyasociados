@@ -36,7 +36,7 @@ const Contacto: React.FC = () => {
       const form = e.target as HTMLFormElement;
       
       // Opción 1: Usar FormSubmit (recomendado)
-      form.action = 'https://formsubmit.co/bakeralvarezcorporation@gmail.com';
+      form.action = 'https://formsubmit.co/bufete.letradosyarquitectos@gmail.com';
       form.method = 'POST';
       
       // Agregar campos ocultos para configuración
@@ -86,7 +86,7 @@ const Contacto: React.FC = () => {
             <div className="flex flex-col lg:flex-row gap-12">
               <div className="lg:w-1/2">
                 <div className="bg-white rounded-xl shadow-md p-8 mb-8">
-                  <h2 className="text-2xl font-semibold mb-6 text-[#010101]">Envíanos un mensaje</h2>
+                  <h2 className="text-2xl font-semibold mb-6 text-[#16224F]">Envíanos un mensaje</h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
@@ -101,7 +101,7 @@ const Contacto: React.FC = () => {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#010101] focus:border-[#010101] outline-none transition-colors"
+                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#16224F] focus:border-[#16224F] outline-none transition-colors"
                         />
                       </div>
                       <div>
@@ -115,7 +115,7 @@ const Contacto: React.FC = () => {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#010101] focus:border-[#010101] outline-none transition-colors"
+                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#16224F] focus:border-[#16224F] outline-none transition-colors"
                         />
                       </div>
                     </div>
@@ -131,7 +131,7 @@ const Contacto: React.FC = () => {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#010101] focus:border-[#010101] outline-none transition-colors"
+                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#16224F] focus:border-[#16224F] outline-none transition-colors"
                         />
                       </div>
                       <div>
@@ -144,7 +144,7 @@ const Contacto: React.FC = () => {
                           value={formData.subject}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#010101] focus:border-[#010101] outline-none transition-colors"
+                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#16224F] focus:border-[#16224F] outline-none transition-colors"
                         >
                           <option value="">Selecciona un asunto</option>
                           <option value="consultation">Consulta</option>
@@ -165,7 +165,7 @@ const Contacto: React.FC = () => {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#010101] focus:border-[#010101] outline-none transition-colors"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#16224F] focus:border-[#16224F] outline-none transition-colors"
                       ></textarea>
 
                       <input type="hidden" name="_captcha" value="false"></input>
@@ -175,7 +175,7 @@ const Contacto: React.FC = () => {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-[#010101] border hover:border-[#010101] cursor-pointer text-white py-3 px-4 rounded-md hover:bg-white hover:text-[#010101] transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full bg-[#16224F] border hover:border-[#16224F] cursor-pointer text-white py-3 px-4 rounded-md hover:bg-white hover:text-[#16224F] transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
                       </button>
@@ -184,7 +184,7 @@ const Contacto: React.FC = () => {
                   </form>
                 </div>
                 <div className="bg-white rounded-xl shadow-md p-8 hidden md:block">
-                  <h2 className="text-2xl font-semibold mb-6 text-[#010101]">Síguenos en redes sociales</h2>
+                  <h2 className="text-2xl font-semibold mb-6 text-[#16224F]">Síguenos en redes sociales</h2>
                   <div className="flex space-x-4">
                     {/* <a href="#" className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -213,7 +213,7 @@ const Contacto: React.FC = () => {
               <div className="lg:w-1/2">
                 {/* Mapa de ubicación */}
                 <div className="bg-white rounded-xl shadow-md p-6 mb-8">
-                  <h2 className="text-2xl font-semibold mb-4 text-[#010101] ">Nuestra ubicación</h2>
+                  <h2 className="text-2xl font-semibold mb-4 text-[#16224F] ">Nuestra ubicación</h2>
                   <div className="rounded-lg overflow-hidden h-80">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2467.229997875298!2d2.1674030251520073!3d41.38676064603542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEdificio%20El%20Triangle%2C%20Plaza%20de%20Catalu%C3%B1a%201%2C%204%20piso.%20Eixample%2008002%2C%20Barcelona.%20Espa%C3%B1a.!5e1!3m2!1sen!2sdo!4v1756823499219!5m2!1sen!2sdo"
@@ -232,11 +232,11 @@ const Contacto: React.FC = () => {
                 </div>
 
                 <div className="bg-white rounded-xl shadow-md p-6 mb-8">
-                  <h2 className="text-2xl font-semibold mb-6 text-[#010101] ">Información de contacto</h2>
+                  <h2 className="text-2xl font-semibold mb-6 text-[#16224F] ">Información de contacto</h2>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-5 h-5 text-[#010101]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#16224F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
@@ -249,7 +249,7 @@ const Contacto: React.FC = () => {
 
                     <div className="flex items-start">
                       <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-5 h-5 text-[#010101]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#16224F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                       </div>
@@ -261,7 +261,7 @@ const Contacto: React.FC = () => {
 
                     <div className="flex items-start">
                       <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-5 h-5 text-[#010101]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#16224F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                       </div>
@@ -273,20 +273,20 @@ const Contacto: React.FC = () => {
 
                     <div className="flex items-start">
                       <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-5 h-5 text-[#010101]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#16224F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Horario de atención</h3>
-                        <p className="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
+                        <p className="text-gray-600">Lunes a Viernes: 8:30 - 17:30</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-xl shadow-md p-8 md:hidden">
-                  <h2 className="text-2xl font-semibold mb-6 text-[#010101]">Síguenos en redes sociales</h2>
+                  <h2 className="text-2xl font-semibold mb-6 text-[#16224F]">Síguenos en redes sociales</h2>
                   <div className="flex space-x-4">
                     {/* <a href="#" className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <div className="flex items-center space-x-4">
           <AnimatedButton>
             <Link 
-              href="/contacto" className="hover:bg-primary-700 text-[#010101] border hover:bg-[#010101] hover:text-white px-4 py-2 rounded-md transition-colors">
+              href="/contacto" className="hover:bg-primary-700 text-[#16224F] border hover:bg-[#16224F] hover:text-white px-4 py-2 rounded-md transition-colors">
               Contacto
             </Link>
           </AnimatedButton>
