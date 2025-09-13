@@ -1,7 +1,6 @@
 // pages/index.tsx
-'use client'
 import Link from 'next/link';
-import { motion } from 'motion/react';
+import * as motion  from 'motion/react-client';
 import AnimatedButton from './ui/motion/AnimatedButton';
 import { getSiteInfo } from './lib/wordpress';
 import { Metadata } from 'next';
