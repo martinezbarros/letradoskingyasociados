@@ -3,6 +3,15 @@
 import Link from 'next/link';
 import { motion } from 'motion/react';
 import AnimatedButton from './ui/motion/AnimatedButton';
+import { getSiteInfo } from './lib/wordpress';
+import { Metadata } from 'next';
+
+const siteInfo = await getSiteInfo();
+export const metadata: Metadata = {
+  title: `Inicio - ${siteInfo.name}`,
+  description: 'Letrados King y Asociados: Bufete especializado en derecho administrativo, constitucional y derechos humanos. Defensa jurídica de alto nivel con compromiso social.',
+  keywords: ["letrados king", "derecho administrativo", "derecho constitucional", "derechos humanos", "defensa legal", "compromiso social"]
+};
 
 const Home: React.FC = () => {
   return (

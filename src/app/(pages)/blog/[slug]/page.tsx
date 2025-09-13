@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getPost, getPosts, getSiteInfo } from '../../lib/wordpress';
+import { getPost, getPosts, getSiteInfo } from '@/app/lib/wordpress';
 
 import * as motion from "motion/react-client";
 

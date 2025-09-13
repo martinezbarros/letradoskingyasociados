@@ -5,12 +5,16 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 import * as motion from "motion/react-client";
-import HeroSection from '../ui/components/HeroSection';
-import AnimatedButton from '../ui/motion/AnimatedButton';
+import HeroSection from '../../ui/components/HeroSection';
+import AnimatedButton from '../../ui/motion/AnimatedButton';
+import { getSiteInfo } from '@/app/lib/wordpress';
+
+const siteInfo = await getSiteInfo();
 
 export const metadata: Metadata = {
-  title: 'Letrados King & Asociados - Innovación Legal para Negocios Modernos',
-  description: 'Firma legal joven y dinámica especializada en derecho digital, startups y emprendimiento. Combinamos expertise jurídico con comprensión del ecosistema tecnológico actual.',
+  title: `Nosotros - ${siteInfo.name}`,
+  description: 'Letrados King y Asociados: Equipo de abogados con formación en las mejores universidades y amplia experiencia en litigación constitucional y administrativa.',
+  keywords: ["nuestro bufete", "abogados constitucionalistas", "experiencia litigación", "formación académica", "equipo letrados king", "valores firma"]
 };
 
 export default function Nosotros() {
@@ -23,7 +27,7 @@ export default function Nosotros() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-12">
-              <div className="lg:w-1/2">
+              <div className="hidden md:block lg:w-1/2">
                 <div className="relative h-96 w-full rounded-xl overflow-hidden">
                   <Image
                     src="https://bakerandalvarez.site/letradoskingyasociados/wp-content/uploads/sites/5/2025/09/our-team-king-scaled.jpg"

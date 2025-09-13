@@ -1,9 +1,9 @@
 // app/galeria/page.tsx
 import React from 'react';
 import { Metadata } from 'next';
-import EnviraGallery from '../ui/components/Gallery';
-import { getSiteInfo } from '../lib/wordpress';
-import HeroSection from '../ui/components/HeroSection';
+import EnviraGallery from '../../ui/components/Gallery';
+import { getSiteInfo } from '../../lib/wordpress';
+import HeroSection from '../../ui/components/HeroSection';
 
 import * as motion from "motion/react-client";
 
@@ -11,7 +11,8 @@ import * as motion from "motion/react-client";
 const siteInfo = await getSiteInfo();
 export const metadata: Metadata = {
   title: `Galería - ${siteInfo.name}`,
-  description: 'Explora nuestra galería de imágenes y proyectos realizados',
+  description: 'Galería de Letrados King y Asociados: Instalaciones, equipo de abogados y participación en casos relevantes de interés público y constitucional.',
+  keywords: ["instalaciones bufete", "equipo abogados", "casos relevantes", "participación mediática", "eventos constitucionales", "galería fotográfica"]
 };
 
 // Obtener todas las galerías de Envira

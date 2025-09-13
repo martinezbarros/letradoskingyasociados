@@ -3,17 +3,18 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import Pagination from '../ui/components/Paginacion';
-import { getPosts, getCategories, getSiteInfo } from '../lib/wordpress';
-import { WPPost } from '../interfaces/wordpressApi';
-import HeroSection from '../ui/components/HeroSection';
+import Pagination from '../../ui/components/Paginacion';
+import { getPosts, getCategories, getSiteInfo } from '../../lib/wordpress';
+import { WPPost } from '../../interfaces/wordpressApi';
+import HeroSection from '../../ui/components/HeroSection';
 
 import * as motion from "motion/react-client";
 
 const siteInfo = await getSiteInfo();
 export const metadata: Metadata = {
   title: `Blog - ${siteInfo.name}`,
-  description: 'Artículos sobre desarrollo web, diseño y marketing digital',
+  description: 'Blog constitucional de Letrados King: Análisis de sentencias relevantes, reformas constitucionales, jurisprudencia y defensa de derechos humanos.',
+  keywords: ["análisis constitucional", "sentencias relevantes", "reformas legales", "derechos humanos", "jurisprudencia", "blog derecho público"]
 };
 
 export default async function Blog(props: { searchParams?: Promise<{ page?: string }> }) {
