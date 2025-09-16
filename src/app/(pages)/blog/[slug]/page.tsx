@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: Props) {
   const categories = post._embedded?.['wp:term']?.[0]?.filter(term => term.taxonomy === 'category') || [];
   
   // Obtener autor
-  const author = post._embedded?.author?.[0];
+  const author = post._embedded?.author?.[1];
   
   // Obtener imagen destacada
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0];
